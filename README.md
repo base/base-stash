@@ -5,7 +5,7 @@
 <img height="250" width="250" src="https://raw.githubusercontent.com/node-base/base-stash/master/docs/logo.png">
 </a>
 </p>
-Base application smart plugin that adds methods to applications for stashing and restoring object states.
+Base application plugin that adds methods to applications for stashing and restoring object states.
 
 You might also be interested in [stash-object](https://github.com/doowb/stash-object).
 
