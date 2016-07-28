@@ -12,6 +12,18 @@ module.exports = function(config) {
     var cache = {};
     var stack = {};
 
+    /**
+     * Stash an object property from the app with an optional "name".
+     *
+     * ```js
+     * app.stash('options');
+     * ```
+     * @name .stash
+     * @param {String} `prop` Property to stash (e.g. `options` or `cache`);
+     * @param {String} `name` Name to use to "tag" the stash to restore from later.
+     * @api public
+     */
+
     this.define('stash', function(prop, name) {
       var stash = getStash(prop);
       name = name || 'default';
@@ -19,6 +31,19 @@ module.exports = function(config) {
       stash.stash(name);
       return this;
     });
+
+    /**
+     * Restore a previously stashed object. Optionally restore from a specific "name" that was used with `.stash`.
+     * When a "name" is not specified, the last stashed object is used.
+     *
+     * ```js
+     * app.restore('options');
+     * ```
+     * @name .restore
+     * @param {String} `prop` Property to restore (e.g. `options` or `cache`);
+     * @param {String} `name` Name used when stashing to restore directly to that spot.
+     * @api public
+     */
 
     this.define('restore', function(prop, name) {
       var stash = getStash(prop);
