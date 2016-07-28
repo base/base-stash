@@ -22,5 +22,42 @@
   "keywords": [
     "base",
     "stash"
-  ]
+  ],
+  "verb": {
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "related": {
+      "highlight": "stash-object",
+      "list": [
+        "assemble",
+        "base",
+        "generate",
+        "stash-object",
+        "templates",
+        "update",
+        "verb"
+      ]
+    },
+    "reflinks": [
+      "verb-generate-readme",
+      "verb"
+    ]
+  },
+  "devDependencies": {
+    "base": "^0.11.1",
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "is-valid-app": "^0.2.0",
+    "stash-object": "^0.1.1"
+  }
 }
