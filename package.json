@@ -1,0 +1,22 @@
+{
+  "name": "base-stash",
+  "description": "Base application smart plugin that adds methods to applications for stashing and restoring object states.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/node-base/base-stash",
+  "author": "Brian Woodward (https://github.com/doowb)",
+  "repository": "node-base/base-stash",
+  "bugs": {
+    "url": "https://github.com/node-base/base-stash/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "base",
+    "stash"
+  ]
+}
